@@ -1,13 +1,17 @@
 import PublicHeader from "@/components/PublicHeader";
 import Footer from "@/components/Footer";
-import StagePlaceholder from "@/components/StagePlaceholder";
+import StaticPageHeader from "@/components/StaticPageHeader";
+import FaqAccordion from "@/components/FaqAccordion";
 
-export default function Page() {
+export default function FaqPage() {
   return (
     <>
       <PublicHeader />
-      <main className="pt-16 min-h-[70vh] flex items-center justify-center px-gutter-mobile">
-        <StagePlaceholder page="FAQ" stage={2} sourceScreen="codecave_ads_agency_how_it_works_faq_contact_hub" />
+      <main className="pt-16">
+        <StaticPageHeader title="Frequently Asked Questions" />
+        <div className="max-w-2xl mx-auto px-gutter-mobile py-unit-2xl">
+          <FaqAccordion />
+        </div>
       </main>
       <Footer />
     </>
